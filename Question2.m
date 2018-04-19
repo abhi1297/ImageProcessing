@@ -8,7 +8,7 @@
 
 
 clc; clear all;close all;
-
+input=imread('flower1.jpg');
 m=1024;
 scale=[512 256 128 64 32] 
 figure;
