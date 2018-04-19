@@ -1,0 +1,11 @@
+clc; close all; clear all;
+A = imread('northpole.jpg');
+kernel = -1 * ones(3);
+kernel(2,2) = 8;  
+output = conv2(double(A), kernel, 'same');
+subplot(141),imshow(A),title('Original Image');
+subplot(142),imshow(output),title('Filtered image');
+B=uint8(output);
+subplot(143),imagesc(B),title('Scaled image');
+K=A+B;
+subplot(144),imshow(K),title('output image');
