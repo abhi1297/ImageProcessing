@@ -4,7 +4,7 @@
 clc;clear all;close all;
 r=imread('MR.jpg');
 c=1;
-y=2.5;
+
 y1=[0.6 0.4 0.3 ]; 
 
 for i=1:length(y1)
